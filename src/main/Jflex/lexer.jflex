@@ -34,15 +34,11 @@ import java.io.FileReader;
 %}
         
 %%
-":"     {tokens.add(":"); System.out.println("Dos Puntos");}
-";"     {tokens.add(";"); System.out.println("Punto y Coma");}
-"E"     {tokens.add("E"); System.out.println("Sumatoria");}
-"="     {tokens.add("="); System.out.println("----");}
-"{"     {tokens.add("{"); System.out.println("Llve Izquirda");}
+"{"     {tokens.add("{"); System.out.println("Llave Izquirda");}
 ">"     {tokens.add(">"); System.out.println("Mayor");}
-"<"     {tokens.add("<"); System.out.println("MENOR");}
+"<"     {tokens.add("<"); System.out.println("Menor");}
 "=="    {tokens.add("=="); System.out.println("Igual");}
-"%%"    {tokens.add(";"); System.out.println("Punto y Coma");}
+"%%"    {tokens.add(";"); System.out.println("Porcentaje");}
 _[A-Za-z]|[0-9] {tokens.add("ID"); System.out.println("Identificador");}
 [0-1000000] {tokens.add("Num"); System.out.println("Numeros");}
-"}"     {tokens.add("}"); System.out.println("Llve Derecha");}
+"}"     {tokens.add("}"); System.out.println("Llave Derecha");}
